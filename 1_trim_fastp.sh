@@ -1,5 +1,5 @@
-inpath=/media/birdlab/myPassport/Naman/Culicicapa_project/uce_olddata/raw-reads/
-outpath=/media/birdlab/myPassport/Naman/Culicicapa_project/uce_olddata/trimmed-reads/trim_unmerged/
+inpath=/path/to/1_raw-reads/
+outpath=/path/to/2_trimmed-reads/
 
 for i in $inpath*_R1.fastq.gz; do
 	file=$(basename $i _R1.fastq.gz);
