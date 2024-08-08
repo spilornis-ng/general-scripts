@@ -1,7 +1,7 @@
-softpath=/home/birdlab/softs/picard-2.27.5/
-inpath=/media/birdlab/myPassport/Naman/Culicicapa_project/uce_olddata/parus_temp/mapped_files/
-outpath=/media/birdlab/myPassport/Naman/Culicicapa_project/uce_olddata/parus_temp/3_rmdup-bams/
-tmppath=/media/birdlab/myPassport/Naman/Culicicapa_project/uce_olddata/parus_temp/
+softpath=/path/to/picard/
+inpath=/path/to/2_mapping/
+outpath=/path/to/3_rmdup-bams/
+tmppath=/path/to/a/generous/space/for/tempfiles/
 
 for i in $inpath*.bam; do
 	file=$(basename $i _sorted_pe.bam)
@@ -11,6 +11,6 @@ for i in $inpath*.bam; do
 		METRICS_FILE=$outpath$file"_sorted_rmdup.metrics.txt" \
 		REMOVE_DUPLICATES=true \
 		VALIDATION_STRINGENCY=LENIENT AS=true \
-		TMP_DIR=/media/birdlab/myPassport/Naman/Culicicapa_project/uce_olddata/parus_temp/ ;
+		TMP_DIR=$tmppath ;
 	done
 
