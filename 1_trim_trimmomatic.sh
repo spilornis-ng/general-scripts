@@ -1,7 +1,7 @@
-softpath=/home/birdlab/softs/Trimmomatic-0.39/
-inpath=/media/birdlab/myPassport/Naman/Chapter2/genomics/raw-data/
-outpath=/media/birdlab/myPassport/Naman/Chapter2/genomics/trimmed-reads/
-trimpath=/media/birdlab/myPassport/Naman/Chapter2/genomics/trimmed-reads/trim-logs/
+softpath=/path/to/Trimmomatic/
+inpath=/path/to/1_raw-data/
+outpath=/path/to/2_trimmed-reads/
+trimpath=/path/to/2_trimmed-reads/trim-logs/
 
 for i in $inpath*_R1_001.fastq.gz; do
 	file=$(basename $i _L001_R1_001.fastq.gz);
